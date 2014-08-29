@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>JMP</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css" />
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-reveal">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Put panels-overlay and left-panel with view inside of views-->
+      <!-- Panels overlay-->
+      <div class="panel-overlay"></div>
+      <!-- Left panel with reveal effect-->
+      <div class="panel panel-left panel-cover">
+        <!-- Left view-->
+        <div class="view view-left navbar-through">
+          <div class="navbar">
+            <div class="navbar-inner">
+              <div class="center sliding"><img src="img/logo.png" alt="JMP PTP" height="30px"></div>
+            </div>
+          </div>
+          <div class="pages">
+            <div data-page="projects" class="page">
+              <div class="page-content">
+                <div class="content-block-title">PROJECTS</div>
+                <div class="list-block">
+                  <ul id="project-list">
+                    
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right view, it is main view-->
+      <div class="view view-main navbar-through">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="center sliding">User Profile</div>
+            <div class="left"><a href="#" class="link open-panel icon-only"><i class="icon icon-white ion-navicon-round size-24 alert-text2" style="padding-left:20px;"></i></a></div>
+          </div>
+        </div>
+        <!-- Pages-->
+        <div class="pages">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index-1" class="page">
+            <!-- Scrollable page content-->
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // <script type="text/javascript" src="cordova.js"></script> -->
+    <!-- // <script type="text/javascript" src="js/handlebars-v1.3.0.js"></script> -->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <!-- script for each page -->
+    <script type="text/javascript" src="js/index.js"></script> 
+
+
+
+    <script type="text/javascript" src="js/view.js"></script> 
+    <script type="text/javascript" src="js/backend.js"></script> 
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+
+  </body>
+</html>
